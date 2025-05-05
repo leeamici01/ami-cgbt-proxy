@@ -19,4 +19,5 @@ export default async function handler(req, res) {
 
   const data = await openaiResponse.json();
   res.status(openaiResponse.status).json(data);
+  // Force redeploy
 }
